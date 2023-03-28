@@ -1,4 +1,11 @@
-# tutorial_online_shop
+# Template project VUE 3
+
+## Mock server start
+```
+npm install -g json-server
+json-server --watch db.json
+```
+Server will start on  http://localhost:3000 by default
 
 ## Project setup
 ```
@@ -14,11 +21,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
