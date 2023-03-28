@@ -1,26 +1,21 @@
 <template>
     <div class="v-main-wrapper">
-        <h1>Catalog</h1>
-        <vCatalog />
-        <vCart />
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import vCatalog from './v-catalog.vue';
-    import vCart from './v-cart.vue';    
     export default {
         name: 'v-main-wrapper',
-        components: {
-            vCatalog, vCart
-        },
+        components: {},
         props: {},
         data() {
             return {
                 title: 'Main wrapper'
             }
         },
-        computed: {},
+        computed: {
+        },
         methods: {},
         watch: {},
         mounted() {}

@@ -2,8 +2,8 @@
     <div class="v-catalog-item">
         <img class="v-catalog-item__image" :src=" require('../assets/images/' + product_data.image)" alt=""/>
         <h3 class="v-catalog-item__name">{{ product_data.name }}</h3>
-        <p class="v-catalog-item__price">price: {{ product_data.price }}$</p>
-        <button class="v-catalog-item__add_to_cart_btn btn" @click="sendDataToParent">Add to cart</button>
+        <p class="v-catalog-item__price">{{ product_data.price }} $</p>
+        <button class="v-catalog-item__add_to_cart_btn btn" @click="addToCart">Add to cart</button>
     </div>
 </template>
 
@@ -24,8 +24,8 @@
         },
         computed: {},
         methods: {
-            sendDataToParent() {
-                this.$emit('sendArticle', this.product_data.article)
+            addToCart() {
+                this.$emit('addToCart',this.product_data)
             }
         }
     }
